@@ -61,6 +61,7 @@
             this.label3 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
             this.nudDivPiezas = new System.Windows.Forms.NumericUpDown();
+            this.btnImpresion = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.gcArticulos)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.articulosBindingSource)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.gridView1)).BeginInit();
@@ -215,7 +216,7 @@
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(782, 458);
+            this.label2.Location = new System.Drawing.Point(798, 458);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(102, 23);
             this.label2.TabIndex = 9;
@@ -223,10 +224,10 @@
             // 
             // tbTotal
             // 
-            this.tbTotal.Location = new System.Drawing.Point(890, 455);
+            this.tbTotal.Location = new System.Drawing.Point(906, 455);
             this.tbTotal.Name = "tbTotal";
             this.tbTotal.ReadOnly = true;
-            this.tbTotal.Size = new System.Drawing.Size(201, 30);
+            this.tbTotal.Size = new System.Drawing.Size(185, 30);
             this.tbTotal.TabIndex = 10;
             this.tbTotal.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
             // 
@@ -374,11 +375,22 @@
             0,
             0});
             // 
+            // btnImpresion
+            // 
+            this.btnImpresion.Location = new System.Drawing.Point(652, 447);
+            this.btnImpresion.Name = "btnImpresion";
+            this.btnImpresion.Size = new System.Drawing.Size(126, 38);
+            this.btnImpresion.TabIndex = 18;
+            this.btnImpresion.Text = "Impresión";
+            this.btnImpresion.UseVisualStyleBackColor = true;
+            this.btnImpresion.Click += new System.EventHandler(this.btnImpresion_Click);
+            // 
             // FormPrincipal
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(10F, 23F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1103, 497);
+            this.Controls.Add(this.btnImpresion);
             this.Controls.Add(this.nudDivPiezas);
             this.Controls.Add(this.label4);
             this.Controls.Add(this.label3);
@@ -447,6 +459,7 @@
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.NumericUpDown nudDivPiezas;
+        private System.Windows.Forms.Button btnImpresion;
     }
 }
 

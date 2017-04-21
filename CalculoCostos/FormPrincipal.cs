@@ -10,6 +10,7 @@ using System.IO;
 using CalculoCostos.GUIs;
 using CalculoCostos.Negocio;
 using DevExpress.XtraEditors.Repository;
+using CalculoCostos.GUIs.Reportes;
 
 namespace CalculoCostos
 {
@@ -18,6 +19,9 @@ namespace CalculoCostos
         private bool _defConfig;
         private IConsultasFBNegocio _consultasFBNegocio;
         private List<Modelos.Articulos> _articulos = new List<Modelos.Articulos>();
+        private decimal _partes;
+
+        private bool _calcReal = false;
 
         public FormPrincipal()
         {
@@ -106,6 +110,8 @@ namespace CalculoCostos
                 this.cmbAlmacen.DataSource = this._consultasFBNegocio.getAlmacenes();
                 this.cmbAlmacen.DisplayMember = "nombre";
                 this.cmbAlmacen.ValueMember = "almacenId";
+
+                this._calcReal = false;
             }
             catch (Exception Ex)
             {
@@ -201,6 +207,8 @@ namespace CalculoCostos
 
 
                 this.gridView2.BestFitColumns();
+
+                this._calcReal = false;
             }
             catch (Exception Ex)
             {
@@ -230,6 +238,8 @@ namespace CalculoCostos
                 this.gcCalcCosto.DataSource = seleccionados;
 
                 this.gridView2.BestFitColumns();
+
+                this._calcReal = false;
             }
             catch (Exception Ex)
             {
@@ -246,6 +256,8 @@ namespace CalculoCostos
 
                 this.tbTotal.Text = string.Empty;
                 this.gcCalcCosto.DataSource = new List<Modelos.Articulos>();
+
+                this._calcReal = false;
             }
             catch (Exception Ex)
             {
@@ -263,6 +275,9 @@ namespace CalculoCostos
                 List<Modelos.Articulos> seleccionados =
                     ((List<Modelos.Articulos>)this.gridView2.DataSource).Select(s => s).ToList();
 
+                if (seleccionados.Count == 0)
+                    throw new Exception("Agregue un artículo para iniciar el cálculo");
+
                 decimal total = 0;
 
                 foreach (Modelos.Articulos sel in seleccionados)
@@ -272,15 +287,42 @@ namespace CalculoCostos
                     total += calculo;
                 }
 
-                decimal partes = total / this.nudDivPiezas.Value;
+                this._partes = total / this.nudDivPiezas.Value;
 
-                this.tbTotal.Text = partes.ToString("C", System.Globalization.CultureInfo.CreateSpecificCulture("en-US"));
+                this.tbTotal.Text = this._partes.ToString("C", System.Globalization.CultureInfo.CreateSpecificCulture("en-US"));
+
+                this._calcReal = true;
             }
             catch (Exception Ex)
             {
                 MessageBox.Show(Ex.Message, "Calcular Costos", MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
             }
         }
+
+        private void btnImpresion_Click(object sender, EventArgs e)
+        {
+            try
+            {
+                if (!this._calcReal)
+                    throw new Exception("Realice un cálculo");
+
+                frmCalculosCostos form = new frmCalculosCostos();
+
+                List<Modelos.Articulos> seleccionados =
+                    ((List<Modelos.Articulos>)this.gridView2.DataSource).Select(s => s).ToList();
+
+                form._articulos = seleccionados;
+                form._costoTotal = this._partes;
+                form._partes = (int)this.nudDivPiezas.Value;
+
+                form.ShowDialog();
+            }
+            catch (Exception Ex)
+            {
+                MessageBox.Show(Ex.Message, "Calcular Costos", MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
+            }
+        }
+
 
 
     }

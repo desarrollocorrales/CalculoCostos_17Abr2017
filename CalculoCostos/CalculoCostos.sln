@@ -3,6 +3,8 @@ Microsoft Visual Studio Solution File, Format Version 11.00
 # Visual Studio 2010
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CalculoCostos", "CalculoCostos.csproj", "{BE9D84E4-DD4E-479C-ABCB-47564D12E68A}"
 EndProject
+Project("{54435603-DBB4-11D2-8724-00A0C9A8B90C}") = "CalculoCostosSetup", "..\CalculoCostosSetup\CalculoCostosSetup.vdproj", "{8C44B117-6DFC-432F-813C-B9EF65F66A04}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|x86 = Debug|x86
@@ -13,6 +15,8 @@ Global
 		{BE9D84E4-DD4E-479C-ABCB-47564D12E68A}.Debug|x86.Build.0 = Debug|x86
 		{BE9D84E4-DD4E-479C-ABCB-47564D12E68A}.Release|x86.ActiveCfg = Release|x86
 		{BE9D84E4-DD4E-479C-ABCB-47564D12E68A}.Release|x86.Build.0 = Release|x86
+		{8C44B117-6DFC-432F-813C-B9EF65F66A04}.Debug|x86.ActiveCfg = Debug
+		{8C44B117-6DFC-432F-813C-B9EF65F66A04}.Release|x86.ActiveCfg = Release
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
