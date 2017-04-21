@@ -1,0 +1,15 @@
+G:\Github\CalculoCostos_17Abr2017\CalculoCostos\bin\Debug\CalculoCostos.exe.config
+G:\Github\CalculoCostos_17Abr2017\CalculoCostos\bin\Debug\CalculoCostos.exe
+G:\Github\CalculoCostos_17Abr2017\CalculoCostos\bin\Debug\CalculoCostos.pdb
+G:\Github\CalculoCostos_17Abr2017\CalculoCostos\bin\Debug\FEncrypt.dll
+G:\Github\CalculoCostos_17Abr2017\CalculoCostos\bin\Debug\FirebirdSql.Data.FirebirdClient.dll
+G:\Github\CalculoCostos_17Abr2017\CalculoCostos\bin\Debug\FirebirdSql.Data.FirebirdClient.pdb
+G:\Github\CalculoCostos_17Abr2017\CalculoCostos\obj\x86\Debug\CalculoCostos.csprojResolveAssemblyReference.cache
+G:\Github\CalculoCostos_17Abr2017\CalculoCostos\obj\x86\Debug\CalculoCostos.FormPrincipal.resources
+G:\Github\CalculoCostos_17Abr2017\CalculoCostos\obj\x86\Debug\CalculoCostos.GUIs.frmAcceso.resources
+G:\Github\CalculoCostos_17Abr2017\CalculoCostos\obj\x86\Debug\CalculoCostos.GUIs.frmConfiguracion.resources
+G:\Github\CalculoCostos_17Abr2017\CalculoCostos\obj\x86\Debug\CalculoCostos.Properties.Resources.resources
+G:\Github\CalculoCostos_17Abr2017\CalculoCostos\obj\x86\Debug\CalculoCostos.csproj.GenerateResource.Cache
+G:\Github\CalculoCostos_17Abr2017\CalculoCostos\obj\x86\Debug\CalculoCostos.exe.licenses
+G:\Github\CalculoCostos_17Abr2017\CalculoCostos\obj\x86\Debug\CalculoCostos.exe
+G:\Github\CalculoCostos_17Abr2017\CalculoCostos\obj\x86\Debug\CalculoCostos.pdb
