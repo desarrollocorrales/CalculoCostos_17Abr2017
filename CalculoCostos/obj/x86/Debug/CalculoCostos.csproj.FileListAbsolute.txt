@@ -4,7 +4,6 @@ G:\Github\CalculoCostos_17Abr2017\CalculoCostos\bin\Debug\CalculoCostos.pdb
 G:\Github\CalculoCostos_17Abr2017\CalculoCostos\bin\Debug\FEncrypt.dll
 G:\Github\CalculoCostos_17Abr2017\CalculoCostos\bin\Debug\FirebirdSql.Data.FirebirdClient.dll
 G:\Github\CalculoCostos_17Abr2017\CalculoCostos\bin\Debug\FirebirdSql.Data.FirebirdClient.pdb
-G:\Github\CalculoCostos_17Abr2017\CalculoCostos\obj\x86\Debug\CalculoCostos.csprojResolveAssemblyReference.cache
 G:\Github\CalculoCostos_17Abr2017\CalculoCostos\obj\x86\Debug\CalculoCostos.FormPrincipal.resources
 G:\Github\CalculoCostos_17Abr2017\CalculoCostos\obj\x86\Debug\CalculoCostos.GUIs.frmAcceso.resources
 G:\Github\CalculoCostos_17Abr2017\CalculoCostos\obj\x86\Debug\CalculoCostos.GUIs.frmConfiguracion.resources
@@ -70,3 +69,7 @@ G:\Github\CalculoCostos_17Abr2017\CalculoCostos\bin\Debug\ru\DevExpress.XtraTree
 G:\Github\CalculoCostos_17Abr2017\CalculoCostos\obj\x86\Debug\CalculoCostos.GUIs.Reportes.frmCalculosCostos.resources
 G:\Github\CalculoCostos_17Abr2017\CalculoCostos\obj\x86\Debug\RdlCompile.cache
 G:\Github\CalculoCostos_17Abr2017\CalculoCostos\obj\x86\Debug\RdlCompile.compiled
+G:\Github\CalculoCostos_17Abr2017\CalculoCostos\obj\x86\Debug\CalculoCostos.csprojResolveAssemblyReference.cache
+G:\Github\CalculoCostos_17Abr2017\CalculoCostos\bin\Debug\Microsoft.ReportViewer.Common.dll
+G:\Github\CalculoCostos_17Abr2017\CalculoCostos\bin\Debug\Microsoft.ReportViewer.ProcessingObjectModel.dll
+G:\Github\CalculoCostos_17Abr2017\CalculoCostos\bin\Debug\Microsoft.ReportViewer.WinForms.dll
